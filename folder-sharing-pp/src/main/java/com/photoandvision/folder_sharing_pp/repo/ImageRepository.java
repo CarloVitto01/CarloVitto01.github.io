@@ -8,4 +8,5 @@ import java.util.List;
 
 @Repository
 public interface ImageRepository extends JpaRepository<Image, Long> {
+    Image findByName(String name); // Metodo per trovare un'immagine per nome
 }
